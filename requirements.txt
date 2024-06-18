@@ -1,0 +1,10 @@
+diffusers
+git+https://github.com/huggingface/transformers
+numpy
+torch
+pillow
+translatepy
+accelerate
+sentencepiece 
+peft
+bitsandbytes
