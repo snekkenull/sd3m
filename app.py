@@ -8,7 +8,6 @@ import torch
 import numpy as np
 import random
 from diffusers import StableDiffusion3Pipeline, AutoencoderKL, SD3Transformer2DModel, StableDiffusion3Img2ImgPipeline, FlowMatchEulerDiscreteScheduler
-import spaces
 from diffusers.utils import load_image
 from PIL import Image
 import requests
@@ -75,7 +74,6 @@ pipe2.scheduler = FlowMatchEulerDiscreteScheduler.from_config(pipe2.scheduler.co
 print(pipe.tokenizer_max_length)
 
 # Function 
-@spaces.GPU()
 def generate_image(
     prompt,
     negative="low quality",
